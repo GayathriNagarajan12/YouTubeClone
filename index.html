@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--  css   -->
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="shortcut icon" href="./assets/images/youtubeicon.png" type="image/x-icon">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+  
+<!--Header-->
+  <header class="header">
+    <div class="row banner">
+      <div class="col-2 ">
+        <a href="index.html"> <img src="assets/images/ytlogo.png" width="120" padding-top="0px" height="60px" alt="logo"></a>
+      </div>
+      <div class="col-7 ">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+            aria-describedby="button-addon">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon"><i
+              class="fas fa-search"></i></button>
+          <button type="button" class="btn " data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="Search with your voice">
+            <img class="ms-1" src="assets/images/voiceblack.png" width="22" alt="microphone">
+          </button>
+        </div>
+      </div>
+      <div class="col-3">
+        <ul class="ullist">
+          <li class="list">
+            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Upload Video">
+              <img class="ms-1" src="assets/images/videos.png" width="25" alt="create">
+            </button>
+          </li>
+          <li class="list">
+            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="YouTube Apps">
+              <img class="ms-1" src="assets/images/moreApp.png" width="20" alt="moreApp">
+            </button>
+          </li>
+          <li class="list">
+            <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Your Notification">
+              <img class="ms-1" src="assets/images/bell.png" width="25" alt="bell">
+            </button>
+          </li>
+          <li class="list"> <a href="#"><img src="assets/images/user.png" width="34" alt="user"></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- categories menu -->
+
+  <div class="category">
+    <ul class="nav">
+      <li class="nav-item me-2">
+        <a class="nav-link active bg-dark text-light rounded-pill " aria-current="page" href="#">All</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">JavaScript</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">Computer Science</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">Bootstrap</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">Live</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">Stock Market</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">Trading</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">Web series</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">Lectures</a>
+      </li>
+      <li class="nav-item me-2">
+        <a class="nav-link bgc rounded-pill" aria-current="page" href="#">New to you</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Side-Menu -->
+  <div class="side-menu justify-content-center ps-3 ">
+    <div class="mb-4 "><a href="index.html"><img src="assets/images/home.png" width="50" alt="home">Home</a></div>
+    <div class="mb-4"><a href="#"><img src="assets/images/explore.png" width="50" alt="explore">Explore</a></div>
+    <div class="mb-4"><a href="#"><img src="assets/images/subscription.png" width="50"
+          alt="subscription">Subscription</a></div>
+    <div class="mb-4"><a href="#"><img src="assets/images/library.png" width="50" alt="library">Library</a></div>
+  </div>
+
+  <!-- SideNav -->
+
+  <nav id="sideNav">
+    <ul class="nav-menu-items">
+      <div class="nav-section">
+        <li class="nav-text mt"><a href="index.html"><img src="assets/images/home.png" width="50" alt="home">Home</a>
+        </li>
+        <li class="nav-text"><a href="#"><img src="assets/images/explore.png" width="50" alt="explore">Explore</a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/subscription.png" width="50"
+              alt="subscription">Subscriptions</a></li>
+      </div> <br>
+      <hr>
+      <div class="nav-section">
+        <li class="nav-text"><a href="#"><img src="assets/images/history.png" width="50" alt="history">History</a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/subscription.png" width="50" alt="library">Library</a>
+        </li>
+        <li class="nav-text"><a href="#"><img src="assets/images/yourvideos.png" width="50" alt="yourVideos">Your
+            Videos</a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/like.png" width="50" alt="like">Like</a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/showmore.png" width="50" alt="showMore">Show more</a>
+        </li>
+      </div> <br>
+      <hr>
+      <div class="nav-section ">
+        <h6 class="text-secondary ms-3">Subscriptions</h6>
+        <li class="nav-text"><a href="#"><img src="assets/images/logosony.jpg" class="rounded-pill sub-icon" width="25"
+              alt="sony">Sony Pictures</a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/logobbc.jpg" class="rounded-pill sub-icon" width="25"
+              alt="BBC"> BBC NEWS </a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/logoeasy.jpg" class="rounded-pill sub-icon" width="25"
+              alt="tutorials"> Easy Tutorials </a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/showmore.png" width="50" alt="">Show 110 more</a></li>
+      </div> <br>
+      <hr>
+      <div class="nav-section">
+        <h6 class="text-secondary ms-3">MORE FROM YOUTUBE</h6>
+        <li class="nav-text"><a href="#"><img src="assets/images/gaming.png" width="50" alt="gaming">Gaming</a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/live.png" width="50" alt="live">Live</a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/sports.png" width="50" alt="sports">Sports </a></li>
+      </div> <br>
+      <hr>
+      <div class="nav-section">
+        <li class="nav-text"><a href="#"><img src="assets/images/settings.png" width="50" alt="settings">Settings</a>
+        </li>
+        <li class="nav-text"><a href="#"><img src="assets/images/report.png" width="50" alt="report">Report history</a>
+        </li>
+        <li class="nav-text"><a href="#"><img src="assets/images/help.png" width="50" alt="help">Help </a></li>
+        <li class="nav-text"><a href="#"><img src="assets/images/feedback.png" width="50" alt="feedback">Send feedback
+          </a></li>
+      </div> <br>
+      <div class="nav-section links-area ms-3">
+        <a href="#">About</a>
+        <a href="#">Press</a>
+        <a href="#">Copyright</a> <br>
+        <a href="#">Contact us</a>
+        <a href="#">Creator</a> <br>
+        <a href="#">Advertise</a>
+        <a href="#">developers</a> <br> <br>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Policy & Safety</a>
+        <a href="#">How Youtube Works</a> <br>
+        <a href="#">Test new features</a>
+      </div>
+    </ul>
+    <footer class="text-secondary ms-4">
+      <p>© 2021 <a class="text-secondary text-decoration-none " href="#">Google LLC </a></p>
+    </footer>
+  </nav>
+  <div class="menuBtn">
+    <img src="assets/images/hamburger.png" id="menuBtn">
+    <a href="index.html" class="logo"> <img src="assets/images/ytlogo.png" width="120" padding-top="0px" height="60px"
+        alt="logo"> </a>
+  </div>
+
+  <!-- End SideNav -->
+
+  <!-- Video Content -->
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 gy-4 mt-2 video">
+    <div class="col 1">
+      <iframe width="280" height="170" src="https://www.youtube.com/embed/AjYAuAW00EQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logonetflix.jpg" class="rounded-pill" width="44" alt="netflix"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>Bheem Goes On A Night-Time Adventure | Mighty Little Bheem
+              <br> Netflix <i class="far fa-check-circle"></i> <br>
+              14K views . Sep 29, 2021
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 2">
+      <iframe width="280" height="170" src="https://www.youtube.com/embed/g_1oiJqE3OI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logobbc.jpg" class="rounded-pill" width="44" alt="bbc"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>The World In 2050 [The Real Future Of Earth] - BBC & Nat Geo Documentaries
+              <br> BBC News <i class="far fa-check-circle"></i> <br>
+              4.9M views . Dec 15, 2020
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 3">
+      <iframe width="280" height="170" src="https://www.youtube.com/embed/WxMF63CzoJ0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logogammatrading.png" class="rounded-pill" width="44"
+              alt="GammaTrading"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>Decoding Markets | Episode 2 | Index Simplified | Share Market for beginners in Tamil
+              <br> Gamma Trading Academy <i class="far fa-check-circle"></i> <br>
+              249k views . 4 hours ago
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 4">
+      <iframe width="280" height="170" src="https://www.youtube.com/embed/4XYs1LN1GEs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logovenumaths.png" class="rounded-pill" width="44" alt="VenuMaths"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>Cryptography - Application of Matrices | Tamilnadu 12th Mathematics
+              <br> Venu Maths Academy <i class="far fa-check-circle"></i> <br>
+              1094 views . Apr 30, 2020
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 5">
+      <a href="#"><img class="img-fluid w-100" src="http://unsplash.it/220/120?gravity"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logosonymusic.png" class="rounded-pill" width="44" alt="logo"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>Param Sundari -Official Video | @A. R. Rahman| Shreya |Amitabh
+              <br> Sony Music India <i class="far fa-check-circle"></i> <br>
+              54M views . July 16, 2021
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 6">
+      <a href="#"><img class="img-fluid w-100 " src="./assets/images/easytutorial.png"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logoeasy.jpg" class="rounded-pill" width="44" alt="easyTutorial"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>How To Make A Virtual Credit Card Design Using HTML....
+              <br> Easy Tutorials <br>
+              19k views .5 weeks ago
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 7">
+      <a href="#"><img class="img-fluid w-100 " src="./assets/images/spiderman.png"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logosony.jpg" class="rounded-pill" width="44" alt=""></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>Spider-Man : No Way Home
+              <br> Sony Pictures <i class="far fa-check-circle"></i> <br>
+              49M views . Aug 24, 2021
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 8">
+      <a href="#"><img class="img-fluid w-100 " src="./assets/images/js.png"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logosumit.jpg" class="rounded-pill" width="44" alt="learnWithSumit"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>Importance of Data Structures and Algorithms in.....
+              <br> Learn with Sumit <br>
+              5.8k views . 3days ago
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 9">
+      <a href="#"><img class="img-fluid w-100 " src="./assets/images/androidapp.png"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logoharry.jpg" class="rounded-pill" width="44" alt="CodeWithHarry"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>Android Development Tutorial For Beginners 🔥
+              <br> CodeWithHarry <i class="far fa-check-circle"></i> <br>
+              1.3M views . Mar 7, 2021
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 10">
+      <a href="#"><img class="img-fluid w-100 " src="./assets/images/mobileapp.png"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logowebsitelearners.jpg" class="rounded-pill" width="44"
+              alt="Website Learners"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>How To Create A Mobile App for Your E-commerce Website
+              <br> Website Learners <i class="far fa-check-circle"></i> <br>
+              342k views . Mar 12, 2021
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 11">
+      <a href="#"><img class="img-fluid w-100" src="http://unsplash.it/220/120?gravity"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logocse.jpg" class="rounded-pill" width="44" alt="cse logo"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>computer science engineering whatsappstatus video....
+              <br> BNP creations <br>
+              173k views . Dec 25, 2020
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col 12">
+      <a href="#"><img class="img-fluid w-100 " src="./assets/images/movie1.png"></a>
+      <div class="row">
+        <div class="col-2 mt-3">
+          <a href="#"><img src="./assets/images/logoinsider.jpg" class="rounded-pill" width="44" alt="TomCruise"></a>
+        </div>
+        <div class="col-10 mt-3">
+          <a href="#" class="text-decoration-none text-dark">
+            <p>How Tom Cruise Pulled Off 8 Amazing Stunts | Movies..
+              <br> Insider <i class="far fa-check-circle"></i> <br>
+              4.5M views . Feb 19, 2021
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
